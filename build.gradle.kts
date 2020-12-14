@@ -36,7 +36,7 @@ kotlin {
         compilerOpts("-DXPLM200=1 -DXPLM210=1 -DXPLM300=1 -DXPLM301=1 -DXPLM302=1 -DXPLM303=1")
         headers(File("${project.rootDir}/src/nativeInterop/cinterop/SDK/CHeaders/XPLM").listFiles()!!)
         headers(File("${project.rootDir}/src/nativeInterop/cinterop/SDK/CHeaders/Widgets").listFiles()!!)
-//        Wrappers are c++ files,which isn't supported bu Kotlin Native by this moment
+//        Wrappers are c++ files,which aren't supported by Kotlin Native at this moment
 //        headers(File("${project.rootDir}/src/nativeInterop/cinterop/SDK/CHeaders/Wrappers").listFiles()!!
 //        { _, name ->
 //            //We only want headers
