@@ -1,0 +1,1 @@
+A template for developers to develop plugins for XPlane11 with Kotlin Native
