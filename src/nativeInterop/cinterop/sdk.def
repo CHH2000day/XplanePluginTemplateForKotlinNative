@@ -1,0 +1,4 @@
+package = sdk
+compilerOpts.mingw = -DAPL=0 -DIBM=1 -DLIN=0
+compilerOpts.linux = -DAPL=0 -DIBM=0 -DLIN=1 -m64 -fno-stack-protector
+compilerOpts.osx = -DAPL=1 -DIBM=0 -DLIN=0
