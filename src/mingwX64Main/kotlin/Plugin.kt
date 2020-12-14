@@ -23,6 +23,7 @@ import sdk.XPLMPluginID
  * @Date 2020/12/14 15:59
  **/
 @Suppress("FunctionName", "unused")
+@CName("XPluginStart")
 actual fun XPluginStart(outName: CPointer<ByteVar>, outSig: CPointer<ByteVar>, outDesc: CPointer<ByteVar>): Int {
     strcpy(outName, NAME)
     strcpy(outSig, OUT_SIG)
@@ -31,6 +32,7 @@ actual fun XPluginStart(outName: CPointer<ByteVar>, outSig: CPointer<ByteVar>, o
 }
 
 @Suppress("FunctionName", "unused")
+@CName("XPluginReceiveMessage")
 actual fun XPluginReceiveMessage(inFrom: XPLMPluginID, inMsg: Int, param: COpaquePointer) {
 
 }
